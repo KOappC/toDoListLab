@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="moduleApp" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./stylesheet.css" type="text/css" rel="stylesheet">
+    <title>TODO List</title>
+</head>
+<body>
+
+    <div ng-controller="FormController as toDo" class="totalList">
+        <div class="listTitle">
+            <p id="toDoTitle">TODO List</p>
+            <p id="toDoSubtitle">A place to store the things you have to do!</p>
+        </div>
+
+        <input type="text" ng-model="searchToDo" placeholder="Filter your to-dos">
+        <ol>
+            <li ng-repeat="things in toDo.toDoList | filter: things"> {{ things }} <i ng-click="toDo.removeToDo($index)" class="material-icons md-18">clear</i></li>
+        </ol>
+        <input type="text" ng-model="newToDo" placeholder="Add you to-do">
+        <button type="button" ng-click="toDo.addToDo(newToDo)">Add</button>
+    </div>
+
+</body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+<script src="./module.js"></script>
+<script src="./controller.js"></script>
+ 
