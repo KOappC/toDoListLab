@@ -1,20 +1,21 @@
 (function() {
-    function hoverDirective() {
+    function hoverPinkDirective() {
         return {
             restrict: "A",
             link: function($scope, $element, $attrs) {
                 $element.on("mouseover", function() {
-                    $element.css("color", "#FF0000").css("transition", "0.3s")
+                    $element.css("background-color", "#ff1493").css("transition", "0.3s")
                 });
                 $element.on("mouseleave", function() {
-                    $element.css("color", "#000").css("transition", "0.3s")
+                    $element.css("background-color", "rgba(255, 105, 180, 0.51)").css("transition", "0.3s")
                 });
             }
         };
     }
 
 
+
     angular
         .module("moduleApp")
-        .directive("hoverDirective", hoverDirective)
+        .directive("hoverPinkDirective", hoverPinkDirective)
 })();

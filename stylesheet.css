@@ -53,11 +53,6 @@ i {
     transition: 0.3s ease;
 }
 
-i:hover {
-    color: #FF0000;
-    transition: 0.3s ease;
-}
-
 
 /* to do list title */
 
@@ -103,12 +98,6 @@ button {
     color: #EEEEEE;
     font-size: 14px;
     cursor: pointer;
-    transition: 0.3s ease;
-}
-
-button:hover {
-    background-color: #ff1493;
-    transition: 0.3s ease;
 }
 
 
