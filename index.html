@@ -18,8 +18,8 @@
         <ol>
             <li ng-repeat="things in toDo.toDoList | filter: searchToDo track by $index"> {{ things }} <i ng-click="toDo.removeToDo($index)" class="material-icons md-18">clear</i></li>
         </ol>
-        <input type="text" ng-model="newToDo" placeholder="Add you to-do">
-        <button type="button" ng-click="toDo.addToDo(newToDo)">Add</button>
+        <input type="text" ng-model="toDo.newToDo" placeholder="Add you to-do">
+        <button type="button" ng-click="toDo.addToDo(toDo.newToDo)">Add</button>
     </div>
 
 </body>
