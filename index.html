@@ -8,7 +8,9 @@
 </head>
 <body>
 
-    <div ng-controller="FormController as toDo" class="totalList">
+
+<task-form></task-form>
+    <!--<div ng-controller="FormController as toDo" class="totalList">
         <div class="listTitle">
             <p id="toDoTitle">TODO List</p>
             <p id="toDoSubtitle">A place to store the things you have to do!</p>
@@ -20,7 +22,7 @@
         </ol>
         <input type="text" ng-model="toDo.newToDo" placeholder="Add you to-do">
         <button type="button" ng-click="toDo.addToDo(toDo.newToDo)" hover-pink-directive="">Add</button>
-    </div>
+    </div>-->
 
 </body>
 </html>
@@ -29,4 +31,6 @@
 <script src="./scripts/controller.js"></script>
 <script src="./scripts/hover-directive.js"></script>
 <script src="./scripts/hover-pink-directive.js"></script>
+<script src="./scripts/task-list.js"></script>
+<script src="./scripts/task-form.js"></script>
  
