@@ -12,7 +12,7 @@
             <ol>
                 <task-list to-do-list="$ctrl.toDoList" search-to-do="$ctrl.searchToDo"></task-list>
             </ol>
-            <input type="text" ng-model="$ctrl.newToDo" placeholder="Add you to-do">
+            <input type="text" ng-model="$ctrl.newToDo" placeholder="Add your to-do">
             <button type="button" ng-click="$ctrl.addToDo($ctrl.newToDo)" hover-pink-directive="">Add</button>
         </div>
         `
