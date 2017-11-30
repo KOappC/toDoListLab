@@ -15,6 +15,6 @@
 
 
     angular
-        .module("moduleApp")
+        .module("app")
         .directive("hoverDirective", hoverDirective)
 })();
