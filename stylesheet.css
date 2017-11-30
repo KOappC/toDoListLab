@@ -53,6 +53,13 @@ i {
     transition: 0.3s ease;
 }
 
+ol input {
+    border: none;
+    width: auto;
+    height: 0;
+    margin: 2px;
+}
+
 
 /* to do list title */
 
